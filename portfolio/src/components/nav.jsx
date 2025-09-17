@@ -21,7 +21,7 @@ const Navbar=()=>{
     }
     
     return(
-        <nav className="pl-20 pr-24 py-4 flex justify-between bg-[#020c45] text-[#af8028] fixed top-0 left-0 w-full shadow-md z-50">
+        <nav className="pl-6 md:pl-20 pr-6 md:pr-24 py-4 flex justify-between bg-[#020c45] text-[#af8028] fixed top-0 left-0 w-full shadow-md z-50">
             <div className="flex justify-center items-center gap-2 ">
                 <div className="border rounded-full w-12 h-12 border-[#af8028] border-3">
                     <img src={"../D-removebg.png"} className="w-8 h-7 m-2"/>
