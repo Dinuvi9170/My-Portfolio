@@ -2,9 +2,9 @@ import {ArrowDownToLine} from 'lucide-react';
 import { motion } from "framer-motion";
 const About= ()=>{
     return(
-        <div className="px-6 md:px-20 lg:px-40 py-10 bg-[#20365e]  font-[Inter] ">
+        <div className="px-4 md:px-20 lg:px-40 py-10 bg-[#20365e]  font-[Inter] ">
             <motion.div
-                initial={{ y: -150, opacity: 0 }}
+                initial={{ y: -50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 viewport={{ once: false }}
@@ -13,13 +13,13 @@ const About= ()=>{
                     <span className="text-white">About&nbsp;</span>
                     <span className="text-[#af8028]"> Me</span>
                 </div>
-                <div className="px-10 py-8 md:px-30 flex flex-col md:flex-row gap-2 md:gap-10 ">
-                    <div className="flex md:flex-1 mt-10 ml-26 md:-ml-10 items-center ">
+                <div className="px-4 py-8 md:px-30 flex flex-col md:flex-row gap-2 md:gap-10 ">
+                    <div className="px-4 flex md:flex-1 mt-10 ml-5 md:-ml-10 items-center ">
                         <div className="border border-t-8 border-8 rounded-full border-[#43687c]">
                             <img src={"./Dinuvi 11.jpg"} className="w-[300px] h-auto rounded-full"/>
                         </div>
                     </div>
-                    <div className="flex-2 mt-20 ml-10 text-base leading-normal text-white">
+                    <div className="md:flex-2 mt-20 ml-10 text-base leading-normal text-white">
                         <p>I am pursuing a BSc (Hons) in Computer Science at the University of Plymouth, with a strong passion for web and software development.
                         I enjoy exploring modern technologies, solving problems and creating applications that are both functional and impactful.
                         My academic journey has given me a solid foundation in programming, databases and full-stack development which I continue

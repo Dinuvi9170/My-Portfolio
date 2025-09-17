@@ -63,12 +63,12 @@ const Skills= ()=>{
     
 
     return(
-        <div className="px-10 py-25 bg-[#020c45] font-[Inter]">
-            <div className="flex text-3xl font-bold justify-center ">
+        <div className="px-2 md:px-10 py-25 bg-[#020c45] font-[Inter]">
+            <div className="flex text-2xl md:text-3xl font-bold justify-center ">
                 <span className=" text-[#af8028]">My&nbsp;</span>
                 <span className=" text-white">Skills</span>
             </div>
-            <button className="flex flex-cols-4 gap-2 px-30 mt-10 cursor-pointer">
+            <button className="flex flex-cols-4 gap-2 px-8 md:px-30 mt-10 cursor-pointer">
                 {categories.map((category)=>(
                     <span 
                         key={category.id}
@@ -78,7 +78,7 @@ const Skills= ()=>{
                     >{category.label}</span>
                 ))}
             </button>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-30">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-8 md:px-30">
                 {filterCategory.map((skill,key)=>(
                     <div key={key} className="bg-[#414974] text-base p-6 rounded-lg shadow-xs">
                         <div className="flex gap-1">
@@ -89,7 +89,7 @@ const Skills= ()=>{
                             <div className=" h-2 rounded-full bg-[#af8028] transition-all duration-1000 ease-out "
                             style={{width:widths[key]}}/>
                         </div>
-                        <span className="text-sm text-white mt-1 ml-25 md:ml-70">{skill.level}%</span>
+                        <span className="text-sm text-white mt-1 ml-52 md:ml-70">{skill.level}%</span>
                     </div>
                 ))}
             </div>

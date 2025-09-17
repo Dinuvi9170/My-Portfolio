@@ -49,8 +49,8 @@ const Home = () => {
     <div className="relative w-full h-screen bg-[#020c45] font-[Inter]">
       <VantaBackground />
       
-      <div className="absolute inset-5 flex flex-col px-6 gap-10 md:flex-row md:px-20 md:gap-20 items-center">
-        <div className="leading-8 md:mr-10 text-center mt-30 md:-mt-1 md:text-left ">
+      <div className="absolute inset-0 flex flex-col-reverse px-6 gap-10 md:flex-row md:px-20 md:gap-20 items-center">
+        <div className="leading-8 md:mr-10 text-center -mt-6 w-full md:w-1/2 md:-mt-1 md:text-left ">
           <motion.div
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -83,7 +83,7 @@ const Home = () => {
               >{tab.label}</Link>
             ))}
           </div>
-          <div className="flex flex-col-2 gap-3 justify-center md:justify-start md:ml-10 mt-5 ">
+          <div className="flex flex-col-2 gap-3 justify-center md:justify-start mb-10 md:ml-10 mt-5 ">
             <Link to="https://github.com/Dinuvi9170">
               <Github fill="white" stroke="white" className="pt-1 border border-2 border-white rounded-full w-5 h-5 "/>
             </Link>
@@ -94,13 +94,13 @@ const Home = () => {
         </div>
         
         <motion.div
-          className="flex flex-1 items-center justify-center mb-8 md:mb-0"
+          className="w-full md:w-1/2 flex items-center justify-center mt-24 mb-2 md:mb-0"
           initial={{ clipPath: "circle(0% at 50% 50%)" }}
           whileInView={{ clipPath: "circle(75% at 50% 50%)" }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-1 justify-center items-center">
+          <div className="flex justify-center w-full items-center">
             <svg viewBox="0 0 100 100" className="w-52 h-64 sm:w-52 sm:h-64  md:w-[350px] md:h-[400px] lg:w-[450px] lg:h-[500px]">
               <defs>
                 <clipPath id="pentagonClip">

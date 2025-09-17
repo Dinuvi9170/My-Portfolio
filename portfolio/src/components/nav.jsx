@@ -21,10 +21,10 @@ const Navbar=()=>{
     }
     
     return(
-        <nav className="pl-6 md:pl-20 pr-6 md:pr-24 py-4 flex justify-between bg-[#020c45] text-[#af8028] fixed top-0 left-0 w-full shadow-md z-50">
+        <nav className="pl-6 md:pl-20 pr-6 md:pr-24 py-4 flex justify-between items-center bg-[#020c45] text-[#af8028] fixed top-0 left-0 w-full shadow-md z-50">
             <div className="flex justify-center items-center gap-2 ">
                 <div className="border rounded-full w-12 h-12 border-[#af8028] border-3">
-                    <img src={"../D-removebg.png"} className="w-8 h-7 m-2"/>
+                    <img src={"/My-Portfolio/D-removebg.png"} className="w-8 h-7 m-2"/>
                 </div>
                 <span className="font-[Inter] text-xl md:text-2xl font-bold">DinuviPerera</span>
             </div>
@@ -41,16 +41,16 @@ const Navbar=()=>{
             </div>
             {/* Mobile Menu Button */}
             <button className="md:hidden text-[#af8028]" onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? <X size={20} className="-mr-80" /> : <Menu size={28} className="-mr-70"/>}
+                {isOpen ? <X size={20} /> : <Menu size={28} />}
             </button>
             {/* Mobile Dropdown */}
             {isOpen && (
-                <div className="absolute top-16 right-0 w-1/4 bg-[#020c45] flex flex-col items-center py-4 space-y-4 shadow-md md:hidden">
+                <div className="absolute top-16 right-0 left-0 bg-[#020c45] flex flex-col items-center py-4 space-y-4 shadow-md md:hidden z-50">
                 {items.map((item) => (
                     <Link
                     key={item.id}
                     to={item.path}
-                    onClick={() => handleClickButton(item.id)}
+                    onClick={() => handleclickbutton(item.id)}
                     className={`${
                         isClicked === item.id
                         ? "text-white underline"

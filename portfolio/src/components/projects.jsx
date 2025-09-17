@@ -32,13 +32,13 @@ const Projects=()=>{
     ];
     return(
         <div className="px-10 py-25 bg-[#020c45] font-[Inter]">
-            <div className="flex text-3xl font-bold justify-center ">
+            <div className="flex text-2xl md:text-3xl font-bold justify-center ">
                 <span className=" text-[#af8028]">Featured&nbsp;</span>
                 <span className=" text-white ">Projects</span>
             </div>
             <p className="text-center mt-4 md:mx-90 text-white">Here are some of my recent projects. Each projects were carefully 
                 crafted with attention to details and user experience.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-45 md:px-68">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-10 md:px-68">
                 {projects.map((project)=>(
                     <div key={project.id} className="flex flex-col bg-[#20365e] rounded-lg hover:scale-110">
                         <div className="h-48 overflow-hidden ">

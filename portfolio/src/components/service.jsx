@@ -32,7 +32,7 @@ const Services = ()=>{
                 <span className=" text-white">My&nbsp;</span>
                 <span className=" text-[#af8028] ">Services</span>
             </div>
-            <div className="grid md:grid-cols-4 px-30 py-20 gap-3 ">
+            <div className="grid md:grid-cols-4 px-8 md:px-30 py-20 gap-3 ">
                 {services.map((service)=>(
                     <div key={service.id} className='flex flex-col text-center items-center shadow-[0px_0px_20px_rgba(255,204,153,0.5)] px-5 py-5 rounded-lg'>
                         <div>{service.icon}</div>
