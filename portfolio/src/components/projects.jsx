@@ -6,7 +6,7 @@ const Projects=()=>{
             id:1,
             title:"Beauty Cosmetics Website",
             description:"Modern beauty product website with category-based browsing and clean UI.",
-            image:"./projects/beautycosmatics.jpeg",
+            image:"./projects/beauty.jpeg",
             tags:["React","Javascript","node.js","tailwindCSS"],
             demourl:"https://beautycosmeticsonline.vercel.app",
             gitlink:"https://github.com/Dinuvi9170/cbc-frontend"
