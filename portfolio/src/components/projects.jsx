@@ -4,12 +4,12 @@ const Projects=()=>{
     const projects=[
         {
             id:1,
-            title:"Dress platform landing page",
-            description:"A beautiful landing page app using React and Tailwind.",
-            image:"./projects/tailoring-image.png",
-            tags:["React","Javascript","CSS"],
-            demourl:"#",
-            gitlink:"#"
+            title:"Beauty Cosmetics Website",
+            description:"A modern beauty cosmetics website showcasing skincare, makeup and beauty products with a clean and user-friendly design.",
+            image:"./projects/beautycosmatics.jpeg",
+            tags:["React","Javascript","node.js","tailwindCSS"],
+            demourl:"https://beautycosmeticsonline.vercel.app",
+            gitlink:"https://github.com/Dinuvi9170/cbc-frontend"
         },
         {
             id:2,
@@ -20,15 +20,7 @@ const Projects=()=>{
             demourl:"#",
             gitlink:"#"
         },
-        {
-            id:3,
-            title:"Dress platform landing page",
-            description:"A beautiful landing page app using React",
-            image:"./projects/tailoring-image.png",
-            tags:["React","Javascript","CSS"],
-            demourl:"#",
-            gitlink:"#"
-        },
+        
     ];
     return(
         <div className="px-10 py-25 bg-[#020c45] font-[Inter]">
