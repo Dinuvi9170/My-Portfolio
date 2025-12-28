@@ -33,7 +33,7 @@ const About= ()=>{
                         </p>
                         <div className="flex items-center -ml-15 mt-20 justify-center">
                             <a
-                                href=""  
+                                href="https://drive.google.com/file/d/1Kpb_W3YEpHVpArXrdBMWfiX2mn3-lN5P/view?usp=sharing"  
                                 download
                                 className="bg-[#af8028] text-white px-5 py-2 rounded-lg font-semibold hover:opacity-60 hover:shadow-md"
                             >

@@ -5,7 +5,7 @@ const Projects=()=>{
         {
             id:1,
             title:"Beauty Cosmetics Website",
-            description:"A modern beauty cosmetics website showcasing skincare, makeup and beauty products with a clean and user-friendly design.",
+            description:"Modern beauty product website with category-based browsing and clean UI.",
             image:"./projects/beautycosmatics.jpeg",
             tags:["React","Javascript","node.js","tailwindCSS"],
             demourl:"https://beautycosmeticsonline.vercel.app",
@@ -13,12 +13,12 @@ const Projects=()=>{
         },
         {
             id:2,
-            title:"Dress platform landing page",
-            description:"A beautiful landing page app using React",
-            image:"./projects/tailoring-image.png",
-            tags:["React","Javascript","CSS"],
-            demourl:"#",
-            gitlink:"#"
+            title:"Solarix Energy Dashboard",
+            description:"Smart solar monitoring and performance analytics platform.",
+            image:"./projects/solarix.png",
+            tags:["React", "Node.js", "MongoDB", "Solar Energy", "Dashboard"],
+            demourl:"https://solarix-energy-dinuvi.netlify.app",
+            gitlink:"https://github.com/Dinuvi9170/solar-project"
         },
         
     ];
@@ -61,7 +61,9 @@ const Projects=()=>{
                         </div>
                     </div>
                 ))}
-                <div className="justify-center mt-8 border border-orange-300 bg-orange-300 w-40 rounded-full px-1 py-1 ml-10 md:mx-80">
+            </div>
+            <div className="flex justify-center">
+                <div className="mt-8 border border-orange-300 bg-orange-300 w-40 rounded-full px-1 py-1 ml-10 md:mx-80">
                     <a href="https://github.com/Dinuvi9170" 
                     className="flex text-black font-semibold items-center mx-2 hover:opacity-60">Check my Github</a>
                 </div>
